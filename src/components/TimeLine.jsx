@@ -58,7 +58,7 @@ const TimeLine = () => {
         </div>
       </div>
       <div>
-        {timeLine.length > 0 ? (
+        {filtered.length > 0 ? (
           filtered.map((item, ind) => (
             <TimeLineCard item={item} key={ind}></TimeLineCard>
           ))
