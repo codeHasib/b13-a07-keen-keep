@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KinKeep | Relationship Nurturing Dashboard
 
-## Getting Started
+<p align="center">
+  <img src="readme.png" alt="KinKeep Banner" width="100%">
+</p>
 
-First, run the development server:
+<h1 align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=35&pause=1000&color=1a4332&center=true&vCenter=true&width=600&lines=Track+your+connections.;Nurture+your+friendships.;Built+by+Mohammad+Hasib" alt="Typing Effect" />
+  </a>
+</h1>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Overview
+
+**KinKeep** is a specialized web application designed to help users stay intentional with their social circles. By transforming a static list of friends into an interactive history of engagements, KinKeep ensures no connection goes cold.
+
+The application uses a modern frontend architecture with dynamic data handling, global state management, and visual analytics.
+
+---
+
+## 🛠️ Technical Stack
+
+```javascript
+const techStack = {
+  framework: "Next.js 15 (App Router)",
+  frontend: "React 19",
+  styling: "Tailwind CSS v4 + daisyUI",
+  state_management: "React Context API",
+  visuals: "Recharts / Chart.js",
+  notifications: "React Hot Toast",
+  animations: "Framer Motion",
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💎 Key Features & Workflow
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 1. Friend Shelf (Home)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Dynamically loads friend profiles from friends_data.json
+Interactive cards showing status (Active / Overdue)
+Clean and modern UI design
 
-## Learn More
+### 2. Communication Hub (Details Page)
 
-To learn more about Next.js, take a look at the following resources:
+Action buttons: Call, Text, Video
+Toast notifications for instant feedback
+Automatically logs interaction history
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 3. Smart Timeline (History)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Chronological list of all interactions
+Filter by Call, Text, Video, or All
+Real-time search functionality
+Optimized using derived state
 
-## Deploy on Vercel
+### 4. Stats & Analytics (Insights)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Pie chart visualization of communication types
+Helps users understand interaction patterns
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Project Structure
+
+```javascript
+src/
+├── app/
+│   ├── page.js           # Home: Friend cards
+│   ├── details/[id]/     # Interaction page
+│   ├── timeline/         # History page
+│   └── stats/            # Analytics page
+├── context/
+│   └── DataContext.js    # Global state management
+├── components/           # UI components
+└── data/
+    └── friends_data.json # Data source
+```
+
+## 🚀 Core Logic Example
+
+```javascript
+function addTimeLine(type) {
+  const logEntry = {
+    item: currentFriend,
+    type: type,
+    today: new Date().toLocaleDateString("en-US", {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    }),
+  };
+
+  setTimeLine((prev) => [...prev, logEntry]);
+  toast.success(`${type} logged for ${currentFriend.name}!`);
+}
+```
+
+## 👨‍💻 Author
+
+### Mohammad Hasib
+
+#### Frontend Developer (React & Next.js)
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
