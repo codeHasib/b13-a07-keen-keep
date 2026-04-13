@@ -7,6 +7,7 @@ const DataContext = createContext(undefined);
 
 export const DataProvider = ({ children }) => {
   const [timeLine, setTimeLine] = useState([]);
+
   const friendsData = data;
   return (
     <DataContext.Provider value={{ friendsData, timeLine, setTimeLine }}>

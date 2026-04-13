@@ -19,7 +19,6 @@ const FriendsDetails = ({ item }) => {
       day: "numeric",
     });
     setTimeLine((prev) => [...prev, { data: item, time: today, type: type }]);
-    console.log(timeLine);
     toast.success(`${type} with ${item.name}`);
   }
 
