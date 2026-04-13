@@ -23,3 +23,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.border-top {
+  border-top: 1px solid black;
+}
