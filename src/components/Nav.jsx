@@ -10,7 +10,7 @@ const Nav = () => {
   const pathName = usePathname();
 
   return (
-    <div>
+    <div className="sticky left-0 top-0 z-50">
       <div className="navbar bg-base-100 shadow-sm flex-wrap justify-center items-center">
         <div className="flex-1 text-center lg:text-start md:text-start sm:text-start">
           <Link

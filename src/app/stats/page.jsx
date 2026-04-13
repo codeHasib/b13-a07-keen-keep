@@ -1,5 +1,5 @@
 const StatsPage = () => {
-  return <div>This is stats</div>;
+  return <div className="min-h-screen">This is stats</div>;
 };
 
 export default StatsPage;

@@ -1,5 +1,5 @@
 const TimeLinePage = () => {
-  return <div>This is time line</div>;
+  return <div className="min-h-screen">This is time line</div>;
 };
 
 export default TimeLinePage;
