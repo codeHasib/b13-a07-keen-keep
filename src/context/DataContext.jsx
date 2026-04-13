@@ -1,21 +1,20 @@
 "use client";
 
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 import data from "../data/friends_data.json";
 
-const DataContext = createContext({
-  friendsData: data,
-});
+const DataContext = createContext(undefined);
 
 export const DataProvider = ({ children }) => {
-
+  const [timeLine, setTimeLine] = useState([]);
+  const friendsData = data;
   return (
-    <DataContext.Provider value={{ personalData, skillsData }}>
+    <DataContext.Provider value={{ friendsData, timeLine, setTimeLine }}>
       {children}
     </DataContext.Provider>
   );
 };
 
-export const usePortfolioData = () => {
+export const useFriendsData = () => {
   return useContext(DataContext);
 };
