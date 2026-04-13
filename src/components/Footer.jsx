@@ -48,7 +48,7 @@ const Footer = () => {
             </Link>
           </div>
         </nav>
-        <div className="border-t border-gray-400 w-full pt-8 flex justify-between items-center font-light text-[14px] text-gray-300">
+        <div className="border-t border-gray-400 w-full pt-8 flex justify-between items-center font-light text-[14px] text-gray-300 flex-wrap">
           <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
           <div className="flex justify-center items-center gap-5">
             <p>Privacy Policy</p>
