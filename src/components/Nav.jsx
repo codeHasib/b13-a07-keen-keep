@@ -1,9 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineWatchLater } from "react-icons/md";
 import { ImStatsDots } from "react-icons/im";
+import { usePathname } from "next/navigation";
 
 const Nav = () => {
+  const pathName = usePathname();
+
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm flex-wrap justify-center items-center">
@@ -17,19 +22,25 @@ const Nav = () => {
         </div>
         <div className="flex-none flex justify-center items-center gap-5">
           <Link href={"/"}>
-            <button className="btn flex justify-center items-center bg-green-900 text-white">
+            <button
+              className={`btn flex justify-center items-center ${pathName === "/" ? "bg-green-900 text-white" : ""}`}
+            >
               {" "}
               <IoHomeOutline /> Home{" "}
             </button>
           </Link>
           <Link href={"/timeline"}>
-            <button className="btn flex justify-center items-center ">
+            <button
+              className={`btn flex justify-center items-center ${pathName === "/timeline" ? "bg-green-900 text-white" : ""}`}
+            >
               {" "}
               <MdOutlineWatchLater /> Timeline{" "}
             </button>
           </Link>
           <Link href={"/stats"}>
-            <button className="btn flex justify-center items-center ">
+            <button
+              className={`btn flex justify-center items-center ${pathName === "/stats" ? "bg-green-900 text-white" : ""}`}
+            >
               {" "}
               <ImStatsDots /> Stats{" "}
             </button>

@@ -5,11 +5,8 @@
     "picture": "/images/friends/f1.png",
     "email": "arif.ahmed@example.com",
     "days_since_contact": 12,
-    "status": "overdue",
-    "tags": [
-      "college",
-      "close friend"
-    ],
+    "status": "Overdue",
+    "tags": ["college", "close friend"],
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
     "next_due_date": "2025-07-20"
@@ -20,11 +17,8 @@
     "picture": "/images/friends/f2.png",
     "email": "sarah.j@example.com",
     "days_since_contact": 3,
-    "status": "active",
-    "tags": [
-      "work",
-      "mentor"
-    ],
+    "status": "On-Track",
+    "tags": ["work", "mentor"],
     "bio": "Senior developer at the first firm. Great for career advice.",
     "goal": 30,
     "next_due_date": "2025-08-05"
@@ -35,11 +29,8 @@
     "picture": "/images/friends/f3.png",
     "email": "m.chen@example.com",
     "days_since_contact": 25,
-    "status": "overdue",
-    "tags": [
-      "childhood",
-      "gaming"
-    ],
+    "status": "Overdue",
+    "tags": ["childhood", "gaming"],
     "bio": "Grew up in the same neighborhood. FPS gaming partner.",
     "goal": 7,
     "next_due_date": "2025-07-15"
@@ -50,11 +41,8 @@
     "picture": "/images/friends/f4.png",
     "email": "elena.rod@example.com",
     "days_since_contact": 1,
-    "status": "active",
-    "tags": [
-      "gym",
-      "fitness"
-    ],
+    "status": "On-Track",
+    "tags": ["gym", "fitness"],
     "bio": "Daily gym partner. Keeps me motivated for leg day.",
     "goal": 2,
     "next_due_date": "2025-07-18"
@@ -65,10 +53,8 @@
     "picture": "/images/friends/f5.png",
     "email": "d.smith@example.com",
     "days_since_contact": 60,
-    "status": "archived",
-    "tags": [
-      "high school"
-    ],
+    "status": "Almost Due",
+    "tags": ["high school"],
     "bio": "Haven't spoken in years. Might be good to reach out.",
     "goal": 90,
     "next_due_date": "2025-10-10"
@@ -79,11 +65,8 @@
     "picture": "/images/friends/f6.png",
     "email": "priya.s@example.com",
     "days_since_contact": 5,
-    "status": "active",
-    "tags": [
-      "neighbor",
-      "close friend"
-    ],
+    "status": "On-Track",
+    "tags": ["neighbor", "close friend"],
     "bio": "Lives two doors down. Great cook and very helpful.",
     "goal": 10,
     "next_due_date": "2025-07-25"
@@ -94,11 +77,8 @@
     "picture": "/images/friends/f7.png",
     "email": "k.lee@example.com",
     "days_since_contact": 15,
-    "status": "overdue",
-    "tags": [
-      "college",
-      "study group"
-    ],
+    "status": "Overdue",
+    "tags": ["college", "study group"],
     "bio": "Smartest guy in my CS class. We used to grind Leetcode together.",
     "goal": 14,
     "next_due_date": "2025-07-21"
@@ -109,11 +89,8 @@
     "picture": "/images/friends/f8.png",
     "email": "jess.t@example.com",
     "days_since_contact": 0,
-    "status": "active",
-    "tags": [
-      "family",
-      "sister"
-    ],
+    "status": "Almost Due",
+    "tags": ["family", "sister"],
     "bio": "The best sister. Always there when I need to vent.",
     "goal": 1,
     "next_due_date": "2025-07-17"
@@ -124,10 +101,8 @@
     "picture": "/images/friends/f9.png",
     "email": "omar.f@example.com",
     "days_since_contact": 45,
-    "status": "overdue",
-    "tags": [
-      "coding bootcamp"
-    ],
+    "status": "Overdue",
+    "tags": ["coding bootcamp"],
     "bio": "MERN stack buddy. We built our first project together.",
     "goal": 30,
     "next_due_date": "2025-08-15"
