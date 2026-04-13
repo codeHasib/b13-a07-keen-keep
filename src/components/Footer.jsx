@@ -7,9 +7,9 @@ import TwitterIcon from "../../public/images/assets/twitter.png";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-horizontal footer-center bg-green-800 text-primary-content p-10">
+      <footer className="footer footer-horizontal footer-center bg-[#244d3f] text-primary-content p-10">
         <aside>
-          <h2 className="text-3xl font-bold">KeenKeeper</h2>
+          <h2 className="text-5xl font-bold">KeenKeeper</h2>
           <p className="font-lighter">
             Your personal Shelf of meaningful connections. Browse, tend, and
             nurture the relationships that matter most.
@@ -47,8 +47,15 @@ const Footer = () => {
               ></Image>
             </Link>
           </div>
-          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
         </nav>
+        <div className="border-t border-gray-400 w-full pt-8 flex justify-between items-center font-light text-[14px] text-gray-300">
+          <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+          <div className="flex justify-center items-center gap-5">
+            <p>Privacy Policy</p>
+            <p>Terms of Service</p>
+            <p>Cookies</p>
+          </div>
+        </div>
       </footer>
     </div>
   );
