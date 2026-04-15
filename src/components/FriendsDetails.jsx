@@ -50,7 +50,7 @@ const FriendsDetails = ({ item }) => {
             </div>
             <div className="bg-white rounded-2xl flex-col justify-center items-center text-center px-5 py-10">
               <h2 className="text-3xl font-bold text-green-900">{goal}</h2>
-              <p>Goad (Days)</p>
+              <p>Goal (Days)</p>
             </div>
             <div className="bg-white rounded-2xl flex-col justify-center items-center py-10 text-center px-5">
               <h2 className="text-3xl font-bold text-green-900">
